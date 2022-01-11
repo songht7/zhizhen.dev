@@ -5,7 +5,7 @@ Vue.use(Router);
 
 //component: () => import(/* webpackChunkName: "about" */ './views/About.vue') 按需引入写法
 
-import Login from "./modules/login";
+// import Login from "./modules/login";
 import auit from "./modules/auit";
 
 export default new Router({
