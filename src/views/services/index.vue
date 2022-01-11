@@ -97,11 +97,11 @@
           </b-row>
         </b-container>
         <div class="brow img-full">
-          <img
+          <!-- <img
             src="@img/p1.jpg"
             class="col-img col-img-full align-top"
             alt="rbd group"
-          />
+          /> -->
         </div>
         <b-container fluid="xl">
           <b-row>
@@ -205,11 +205,11 @@
           </b-row>
         </b-container>
         <div class="brow img-full">
-          <img
+          <!-- <img
             src="@img/p2.jpg"
             class="col-img col-img-full align-top"
             alt="rbd group"
-          />
+          /> -->
         </div>
         <b-container fluid="xl">
           <b-row>
