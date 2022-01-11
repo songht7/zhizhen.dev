@@ -35,22 +35,22 @@
             <template v-slot:lead>
               <div class="copyright">
                 <a href="https://beian.miit.gov.cn/" target="_blank">
-                  {{ Copyright.ICP }}
+                  {{ Copyright.icp }}
                 </a>
                 <a
-                  :href="`http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=${Copyright.Gov}`"
+                  :href="`http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=${Copyright.gov}`"
                   target="_blank"
                   ><img src="@img/national.png" />公安备案号：
-                  {{ Copyright.Gov }}
+                  {{ Copyright.gov }}
                 </a>
                 <p>
                   {{ Copyright.copyright }}
                   <a :href="`${BaseUrl}`" target="_blank">
-                    {{ Copyright.Company }}
+                    {{ Copyright.company }}
                   </a>
                 </p>
                 <!-- <p>备案机关：上海闵行区网安支队</p> -->
-                <p>单位地址：{{ Copyright.Address }}</p>
+                <p>单位地址：{{ Copyright.address }}</p>
               </div>
             </template>
             <p></p> </b-jumbotron

@@ -1,5 +1,5 @@
 let cloudUrl = 'https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen';//腾讯图片桶地址
-let BaseUrl = "http://www.zhizhen.jobpgroup.com"
+let BaseUrl = "http://zhizhen.jobpgroup.com"
 const Logo = { 'deep': cloudUrl + "/logo.png", 'white': cloudUrl + "/logo-white.png" }
 const Nav = [
     { 'cn': "首页", 'en': "HOME", 'url': "/home" },
@@ -11,11 +11,11 @@ const Nav = [
     { 'cn': "联系我们", 'en': "CONTACT US", 'url': "/contact" }
 ]
 const Copyright = {
-    "ICP": "沪ICP备19019514号-1",
-    "Gov": "31011202011780",
-    'copyright': "Copyright©2019-2022",
-    "Company": "上海技优网络科技有限公司 - 质贞平台",
-    "Address": "上海黄浦区西藏南路218号永银大厦5层591",
+    "icp": "沪ICP备19019514号-1",
+    "gov": "31011202011780",
+    'copyight': "Copyright©2019-2022",
+    "company": "上海技优网络科技有限公司 - 质贞平台",
+    "address": "上海黄浦区西藏南路218号永银大厦5层591",
 }
 const ContHome = {
     banner: cloudUrl + '/home/1.jpg',
