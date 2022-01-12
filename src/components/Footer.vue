@@ -2,9 +2,10 @@
   <div id="Footer-box">
     <div class="footer-block">
       <b-container fluid="xl">
-        <b-row class="footer-nav">
-          <b-col cols="1">
+        <b-row class="footer-nav justify-content-md-center" align-h="between" align-content='center' align-v="end">
+          <b-col md="1">
             <a href="/">
+              <!-- <b-img :src="`${logo.white}`" fluid alt="rbd group"></b-img> -->
               <img
                 :src="`${logo.white}`"
                 class="logo-footer col-img align-top"
@@ -12,8 +13,8 @@
               />
             </a>
           </b-col>
-          <b-col cols="11">
-            <b-nav class="nav-bar-main" small fill>
+          <b-col cols="12" md="auto">
+            <b-nav class="nav-bar-main" small>
               <b-nav-item
                 class="nav-btn"
                 :href="`${obj.url}`"
@@ -80,7 +81,16 @@ export default {
   mounted() {
     // this.getAuthority();
   },
-  methods: {},
+  methods: {
+    animated() {
+      this.$store.state.animated.animateStyle = "fadeIn";
+      this.$store.state.animated.duration = "3s";
+      setTimeout(() => {
+        this.$store.state.animated.animateStyle = "";
+        this.$store.state.animated.duration = "";
+      }, 3000);
+    },
+  },
 };
 </script>
 <style scoped>

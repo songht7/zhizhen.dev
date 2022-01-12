@@ -21,20 +21,48 @@
       <!-- block-bg -->
       <div class="page-block">
         <b-container fluid="xl" class="text-light text-center">
-          <b-row  class="mb-3 block-row" align-h="between" :key="key" v-for="(obj, key) in Cont.list">
-            <b-col md="5" class="p-3">
+          <b-row
+            class="mb-3 block-row"
+            align-h="between"
+            :key="key"
+            v-for="(obj, key) in Cont.list"
+          >
+            <b-col lg="5" class="p-3">
               <img
                 :src="`${obj.pic}`"
-                class="col-img  align-top"
+                class="col-img align-top"
                 alt="rbd group"
               />
             </b-col>
-            <b-col md="5" class="ml-auto p-3">
+            <b-col lg="5" class="ml-auto p-3">
               <img
                 :src="`${obj.picCont}`"
                 class="col-img align-top"
                 alt="rbd group"
               />
+            </b-col>
+          </b-row>
+        </b-container>
+      </div>
+
+      <div class="page-block">
+        <b-container fluid="xl" class="text-light text-center">
+          <b-row class="mb-3 text-center" align-h="between">
+            <b-col  class="ml-auto p-1" :key="key" v-for="(obj, key) in Cont.product">
+              <div class="pro-block">
+                <b-img
+                  :src="`${obj.pic}`"
+                  fluid
+                  rounded="top"
+                  alt="rbd group"
+                ></b-img>
+                <!-- <img
+                :src="`${obj.pic}`"
+                class="col-img align-top"
+                alt="rbd group"
+              /> -->
+                <div class="p-title">{{ obj.title }}</div>
+              </div>
             </b-col>
           </b-row>
         </b-container>
