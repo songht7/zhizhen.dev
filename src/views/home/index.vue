@@ -27,14 +27,14 @@
             :key="key"
             v-for="(obj, key) in Cont.list"
           >
-            <b-col lg="5" class="p-3">
+            <b-col lg="5" class="p-3 animate__animated animate__fadeInLeft">
               <img
                 :src="`${obj.pic}`"
                 class="col-img align-top"
                 alt="rbd group"
               />
             </b-col>
-            <b-col lg="5" class="ml-auto p-3">
+            <b-col lg="5" class="ml-auto p-3 animate__animated animate__fadeInRight">
               <img
                 :src="`${obj.picCont}`"
                 class="col-img align-top"
@@ -47,22 +47,27 @@
 
       <div class="page-block">
         <b-container fluid="xl" class="text-light text-center">
-          <b-row class="mb-3 text-center" align-h="between">
-            <b-col  class="ml-auto p-1" :key="key" v-for="(obj, key) in Cont.product">
-              <div class="pro-block">
-                <b-img
+          <b-row class="text-center">
+            <b-col
+              :cols="ProCols"
+              class="ml-auto mb-3"
+              :key="key"
+              v-for="(obj, key) in Cont.product"
+            >
+              <a class="pro-block" href="#">
+                <!-- <b-img
                   :src="`${obj.pic}`"
                   fluid
                   rounded="top"
                   alt="rbd group"
-                ></b-img>
-                <!-- <img
+                ></b-img> -->
+                <img
                 :src="`${obj.pic}`"
                 class="col-img align-top"
                 alt="rbd group"
-              /> -->
+              />
                 <div class="p-title">{{ obj.title }}</div>
-              </div>
+              </a>
             </b-col>
           </b-row>
         </b-container>
@@ -81,6 +86,7 @@ export default {
   data() {
     return {
       Cont: ContHome,
+      ProCols: 0,
       AuditorCols1: 4,
       AuditorCols2: 8,
     };
@@ -94,9 +100,11 @@ export default {
       that.cols = 12;
       that.AuditorCols1 = 12;
       that.AuditorCols2 = 12;
+      that.ProCols = 12;
     } else {
       that.AuditorCols1 = 4;
       that.AuditorCols2 = 8;
+      that.ProCols = 0;
     }
   },
   methods: {},
