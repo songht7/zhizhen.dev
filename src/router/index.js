@@ -9,8 +9,8 @@ Vue.use(Router);
 import auit from "./modules/auit";
 
 export default new Router({
-  mode: "history",
-  base: process.env.BASE_URL,
+  // mode: "history",
+  base: '/',//process.env.BASE_URL,
   routes: [
     {
       path: "*",
@@ -29,22 +29,22 @@ export default new Router({
       // ]
     },
     {
-      path: "/index",
+      path: "/home/index",
       name: "Index",
       component: () => import("@/views/home/index"),
     },
     {
-      path: "/detail",//
+      path: "/detail/index",//
       name: "Detail",
       component: () => import("@/views/detail/index"),
     },
     {
-      path: '/services',
+      path: '/services/index',
       name: 'Services',
       component: () => import('@/views/services/index'),
     },
     {
-      path: '/contact',
+      path: '/contact/index',
       name: 'Contact',
       component: () => import('@/views/contact/index'),
     },

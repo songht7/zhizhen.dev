@@ -2,13 +2,13 @@ let cloudUrl = 'https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data
 let BaseUrl = "http://zhizhen.jobpgroup.com"
 const Logo = { 'deep': cloudUrl + "/logo.png", 'white': cloudUrl + "/logo-white.png" }
 const Nav = [
-    { 'cn': "首页", 'en': "HOME", 'url': "/home" },
-    { 'cn': "市场优势", 'en': "MARKET ADVANTAGE", 'url': "/detail?p=market" },
-    { 'cn': "关于我们", 'en': "ABOUT US", 'url': "/detail?p=about" },
-    { 'cn': "服务流程", 'en': "SERVICE PROCESS", 'url': "/detail?p=service" },
-    { 'cn': "发展前景", 'en': "DEVELOPMENT PROSPECT", 'url': "/detail?p=develop" },
-    { 'cn': "品牌文化", 'en': "BRAND CULTURE", 'url': "/detail?p=brand" },
-    { 'cn': "联系我们", 'en': "CONTACT US", 'url': "/contact" }
+    { 'cn': "首页", 'en': "HOME", 'url': "/" },
+    { 'cn': "市场优势", 'en': "MARKET ADVANTAGE", 'url': "/#/detail/index?p=market" },
+    { 'cn': "关于我们", 'en': "ABOUT US", 'url': "/#/detail/index?p=about" },
+    { 'cn': "服务流程", 'en': "SERVICE PROCESS", 'url': "/#/detail/index?p=service" },
+    { 'cn': "发展前景", 'en': "DEVELOPMENT PROSPECT", 'url': "/#/detail/index?p=develop" },
+    { 'cn': "品牌文化", 'en': "BRAND CULTURE", 'url': "/#/detail/index?p=brand" },
+    { 'cn': "联系我们", 'en': "CONTACT US", 'url': "/#/contact/index" }
 ]
 const Copyright = {
     "icp": "沪ICP备19019514号-1",
@@ -32,8 +32,10 @@ const ContHome = {
         { "pic": cloudUrl + '/home/p3.jpg', "title": "检测服务" },
         { "pic": cloudUrl + '/home/p4.jpg', "title": "技术支持" },
         { "pic": cloudUrl + '/home/p5.jpg', "title": "培训服务" },
-    ],
-    detail: {
+    ]
+}
+const ContDetail = {
+    list: {
         /*市场优势*/
         'market': [
             { "pic": cloudUrl + '/detail/market/1-1.jpg', 'picCont': cloudUrl + '/detail/market/1-2.jpg', 'detail': cloudUrl + '/detail/market/1-3.png', 'dShow': false, "title": "市场现状" },
@@ -59,5 +61,6 @@ module.exports = {
     Logo,
     Nav,
     Copyright,
-    ContHome
+    ContHome,
+    ContDetail
 }

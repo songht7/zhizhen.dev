@@ -19,6 +19,7 @@
                   </div>
                 </b-col>
                 <b-col :cols="addressRow.r2">
+                  <p>江苏省无锡市新吴区<br>行创四路89号星洲商务园1栋401室</p>
                   401room, building1, xingzhou business park, 89 xingchuang four
                   road, new sitrict, WuXi city, Jiangsu Province
                 </b-col>
@@ -30,8 +31,8 @@
                   </div>
                 </b-col>
                 <b-col :cols="addressRow.r2">
-                  15th floor, building 1, enterprise world, 222 hubin road,
-                  Shanghai
+                  <p>上海市西藏南路218号永银大厦5楼591室</p>
+                  Room 591, 5th floor, Yongyin building, 218 Xizang South Road, Shanghai
                 </b-col>
               </b-row>
               <p class="line-lg"></p>

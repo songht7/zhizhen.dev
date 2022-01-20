@@ -26,6 +26,14 @@
             v-for="(obj, key) in navs"
             >{{ obj.cn }}</b-nav-item
           >
+          <!-- <b-link
+            class="nav-btn"
+            :href="`${obj.url}`"
+            @click="animated"
+            :key="key"
+            v-for="(obj, key) in navs"
+            >{{ obj.cn }}
+          </b-link> -->
         </b-navbar-nav>
       </b-collapse>
     </b-container>
@@ -64,7 +72,7 @@ export default {
       setTimeout(() => {
         this.$store.state.animated.animateStyle = "";
         this.$store.state.animated.duration = "";
-      }, 3000);
+      }, 500);
     },
   },
 };
