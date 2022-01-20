@@ -1,5 +1,6 @@
 #Page-main {
-  position: relative;
+  position        : relative;
+  background-color: #fff;
 }
 
 #Logo {
@@ -64,7 +65,7 @@
 }
 
 #Page-container {
-  padding: 4.5rem 0 0;
+  padding: 6.5rem 0 0;
 }
 
 .page-block {
@@ -81,25 +82,51 @@
   margin-bottom : 2rem;
 }
 
+.block-row-bold {
+  border-bottom-width: .25rem;
+  border-bottom-color: #7d7d7d;
+  padding            : 4rem 0;
+  margin-bottom      : 0;
+}
+
+.block-detail {
+  background-color: #eeeeef;
+  position        : relative;
+  padding         : 4rem 0;
+  overflow        : hidden;
+}
+
+.detail-arrow {
+  position: absolute;
+  top     : -1.5px;
+  right   : 16%;
+}
+
+.img-detail:hover {
+  cursor: pointer;
+}
+
 .pro-block {
   background   : #e6e6e6;
   color        : #7d7d7d;
   border-radius: .3rem;
-  display: block;
-  overflow: hidden;
+  display      : block;
+  overflow     : hidden;
 }
-.pro-block:hover{
-  color        : #4e4e4e;
+
+.pro-block:hover {
+  color: #4e4e4e;
 }
-.pro-block:hover .col-img{
-  transform:scale(1.1)
+
+.pro-block:hover .col-img {
+  transform: scale(1.1)
 }
 
 .p-title {
-  display: block;
-  padding: .4rem 0;
+  display    : block;
+  padding    : .4rem 0;
   line-height: 1.8;
-  font-size: 1.45rem;
+  font-size  : 1.45rem;
 }
 
 .brow {

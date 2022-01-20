@@ -3,11 +3,11 @@ let BaseUrl = "http://zhizhen.jobpgroup.com"
 const Logo = { 'deep': cloudUrl + "/logo.png", 'white': cloudUrl + "/logo-white.png" }
 const Nav = [
     { 'cn': "首页", 'en': "HOME", 'url': "/home" },
-    { 'cn': "市场优势", 'en': "MARKET ADVANTAGE", 'url': "/market" },
-    { 'cn': "关于我们", 'en': "ABOUT US", 'url': "/about" },
-    { 'cn': "服务流程", 'en': "SERVICE PROCESS", 'url': "/service" },
-    { 'cn': "发展前景", 'en': "DEVELOPMENT PROSPECT", 'url': "/develop" },
-    { 'cn': "品牌文化", 'en': "BRAND CULTURE", 'url': "/brand" },
+    { 'cn': "市场优势", 'en': "MARKET ADVANTAGE", 'url': "/detail?p=market" },
+    { 'cn': "关于我们", 'en': "ABOUT US", 'url': "/detail?p=about" },
+    { 'cn': "服务流程", 'en': "SERVICE PROCESS", 'url': "/detail?p=service" },
+    { 'cn': "发展前景", 'en': "DEVELOPMENT PROSPECT", 'url': "/detail?p=develop" },
+    { 'cn': "品牌文化", 'en': "BRAND CULTURE", 'url': "/detail?p=brand" },
     { 'cn': "联系我们", 'en': "CONTACT US", 'url': "/contact" }
 ]
 const Copyright = {
@@ -32,7 +32,23 @@ const ContHome = {
         { "pic": cloudUrl + '/home/p3.jpg', "title": "检测服务" },
         { "pic": cloudUrl + '/home/p4.jpg', "title": "技术支持" },
         { "pic": cloudUrl + '/home/p5.jpg', "title": "培训服务" },
-    ]
+    ],
+    detail: {
+        /*市场优势*/
+        'market': [
+            { "pic": cloudUrl + '/detail/market/1-1.jpg', 'picCont': cloudUrl + '/detail/market/1-2.jpg', 'detail': cloudUrl + '/detail/market/1-3.png', 'dShow': false, "title": "市场现状" },
+            { "pic": cloudUrl + '/detail/market/2-1.jpg', 'picCont': cloudUrl + '/detail/market/2-2.jpg', 'detail': cloudUrl + '/detail/market/2-3.png', 'dShow': false, "title": "行业痛点" },
+            { "pic": cloudUrl + '/detail/market/3-1.jpg', 'picCont': cloudUrl + '/detail/market/3-2.jpg', 'detail': cloudUrl + '/detail/market/3-3.png', 'dShow': false, "title": "市场规模" },
+            { "pic": cloudUrl + '/detail/market/4-1.jpg', 'picCont': cloudUrl + '/detail/market/4-2.jpg', 'detail': cloudUrl + '/detail/market/4-3.png', 'dShow': false, "title": "竞争分析" },
+        ],
+        /*服务流程*/
+        'service': [
+            { "pic": cloudUrl + '/detail/service/1-1.jpg', 'picCont': cloudUrl + '/detail/service/1-2.jpg', 'detail': cloudUrl + '/detail/service/1-3.png', 'dShow': false, "title": "" },
+            { "pic": cloudUrl + '/detail/service/2-1.jpg', 'picCont': cloudUrl + '/detail/service/2-2.jpg', 'detail': cloudUrl + '/detail/service/2-3.png', 'dShow': false, "title": "" },
+            { "pic": cloudUrl + '/detail/service/3-1.jpg', 'picCont': cloudUrl + '/detail/service/3-2.jpg', 'detail': cloudUrl + '/detail/service/3-3.png', 'dShow': false, "title": "" },
+            { "pic": cloudUrl + '/detail/service/4-1.jpg', 'picCont': cloudUrl + '/detail/service/4-2.jpg', 'detail': cloudUrl + '/detail/service/4-3.png', 'dShow': false, "title": "" },
+        ],
+    }
 }
 // export default {
 //     Logo,
