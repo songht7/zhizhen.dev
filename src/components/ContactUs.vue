@@ -6,7 +6,7 @@
           <b-row>
             <b-jumbotron>
               <template v-slot:header>
-                Contact Us
+                联系我们
               </template>
             </b-jumbotron>
           </b-row>
@@ -15,31 +15,28 @@
               <b-row class="line-lg">
                 <b-col :cols="addressRow.r1">
                   <div class="icon-block icon-location">
-                    Address:
+                    江苏地址:
                   </div>
                 </b-col>
                 <b-col :cols="addressRow.r2">
                   <p>江苏省无锡市新吴区<br>行创四路89号星洲商务园1栋401室</p>
-                  401room, building1, xingzhou business park, 89 xingchuang four
-                  road, new sitrict, WuXi city, Jiangsu Province
                 </b-col>
               </b-row>
               <b-row class="line-lg">
                 <b-col :cols="addressRow.r1">
                   <div class="icon-block icon-location">
-                    Address:
+                    上海地址:
                   </div>
                 </b-col>
                 <b-col :cols="addressRow.r2">
                   <p>上海市西藏南路218号永银大厦5楼591室</p>
-                  Room 591, 5th floor, Yongyin building, 218 Xizang South Road, Shanghai
                 </b-col>
               </b-row>
               <p class="line-lg"></p>
               <b-row class="line-lg">
                 <b-col :cols="addressRow.r1">
                   <div class="icon-block icon-phone">
-                    Phone:
+                    电话:
                   </div>
                 </b-col>
                 <b-col :cols="addressRow.r2">
@@ -49,7 +46,7 @@
               <b-row class="line-lg">
                 <b-col :cols="addressRow.r1">
                   <div class="icon-block icon-email">
-                    Email:
+                    邮箱:
                   </div>
                 </b-col>
                 <b-col :cols="addressRow.r2">
@@ -66,7 +63,7 @@
           <b-col>
             <b-jumbotron>
               <template v-slot:header>
-                Send Message
+                给我们留言
               </template>
               <template v-slot:lead>
                 <div class="temp-row">
@@ -76,7 +73,7 @@
                         class="rbd-input"
                         id="type-text"
                         type="text"
-                        placeholder="Enter your name"
+                        placeholder="您的姓名"
                         v-model="name"
                       ></b-form-input>
                     </b-col>
@@ -87,7 +84,7 @@
                         class="rbd-input"
                         id="type-number"
                         type="number"
-                        placeholder="Enter your phone number"
+                        placeholder="您的手机号"
                         v-model="phone"
                       ></b-form-input>
                     </b-col>
@@ -98,7 +95,7 @@
                         class="rbd-input"
                         id="type-email"
                         type="email"
-                        placeholder="Enter your email"
+                        placeholder="您的邮箱"
                         v-model="email"
                       ></b-form-input>
                     </b-col>
@@ -109,7 +106,7 @@
                         class="rbd-textarea"
                         id="mark"
                         v-model="mark"
-                        placeholder="Enter something..."
+                        placeholder="说些什么..."
                         size="lg"
                       ></b-form-textarea>
                     </b-col>
@@ -131,7 +128,7 @@
                           variant="primary"
                           style="width:100%"
                           @click="OnSubmit"
-                          >Submit Request</b-button
+                          >确认发送</b-button
                         >
                       </div>
                     </b-col>
@@ -216,19 +213,19 @@ export default {
           name: "name",
           checkType: "notnull",
           checkRule: "",
-          errorMsg: "Please enter name",
+          errorMsg: "请填写姓名",
         },
         {
           name: "phone",
           checkType: "phoneno",
           checkRule: "",
-          errorMsg: "Please enter the correct phone number",
+          errorMsg: "请确认手机号是否正确",
         },
         {
           name: "email",
           checkType: "email",
           checkRule: "",
-          errorMsg: "Please enter the correct email",
+          errorMsg: "请填写正确的邮箱地址",
         },
       ];
       //进行表单检查
@@ -237,7 +234,7 @@ export default {
       if (checkRes) {
         //api: contact api.js
         var data = {
-          邮件来源: ".::RBD Group Site::.",
+          邮件来源: ".::质贞 zhizhen.jobpgroup.com ::.",
           姓名: _formData.name,
           联系方式: _formData.phone,
           邮箱: _formData.email,

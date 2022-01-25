@@ -22,9 +22,9 @@ export default new Router({
       component: () => import("@/views/home/index"),
       // children: [
       //   {
-      //     path: "services",
-      //     name: "Services",
-      //     component: () => import("@/views/services/index"),
+      //     path: "service",
+      //     name: "Service",
+      //     component: () => import("@/views/service/index"),
       //   },
       // ]
     },
@@ -44,9 +44,9 @@ export default new Router({
       component: () => import("@/views/detail/index"),
     },
     {
-      path: '/services/index',
-      name: 'Services',
-      component: () => import('@/views/services/index'),
+      path: '/service/index',
+      name: 'Service',
+      component: () => import('@/views/service/index'),
     },
     {
       path: '/contact/index',
