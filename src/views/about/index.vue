@@ -10,69 +10,135 @@
       ]"
     >
       <!-- class="page-block block-bg" -->
-      <div id="Contact" class="page-block">
-        <div id="Loading" v-if="Loading">
-          <b-spinner
-            style="width: 3rem; height: 3rem"
-            label="Large Spinner"
-          ></b-spinner>
-        </div>
-        <div v-if="List && List.length">
-          <div :key="key" v-for="(obj, key) in List">
-            <div class="block-row block-row-bold">
-              <b-container fluid="xl" class="text-light text-center">
-                <b-row class="" align-h="between">
-                  <b-col
-                    lg="5"
-                    class="p-3 animate__animated animate__fadeInLeft"
-                  >
-                    <img
-                      :src="`${obj.pic}`"
-                      class="col-img align-top"
-                      alt="rbd group"
-                    />
-                  </b-col>
-                  <b-col
-                    lg="5"
-                    class="ml-auto p-3 animate__animated animate__fadeInRight"
-                  >
-                    <img
-                      :src="`${obj.picCont}`"
-                      class="col-img align-top img-detail"
-                      alt="rbd group"
-                      @click="blockDetail(key)"
-                    />
-                  </b-col>
-                </b-row>
-              </b-container>
-            </div>
-            <div v-show="obj.dShow" class="block-detail">
-              <b-icon
-                class="detail-arrow"
-                icon="triangle-fill"
-                font-scale="1.2"
-                flip-v
-                style="color: #7d7d7d"
-              ></b-icon>
-              <b-container
-                fluid="xl"
-                class="
-                  text-light text-center
-                  animate__animated animate__fadeInDown
-                "
-              >
-                <b-row class="" align-h="between">
-                  <b-col lg="12" class="p-3">
-                    <img
-                      :src="`${obj.detail}`"
-                      class="col-img align-top"
-                      alt="rbd group"
-                    />
-                  </b-col>
-                </b-row>
-              </b-container>
-            </div>
+      <div id="Contact" class="page-block pb-0">
+        <div v-if="List.map">
+          <!--map-->
+          <div class="p-4">
+            <b-container fluid="xl" class="text-light text-center">
+              <b-row class="" align-h="between">
+                <b-col lg="5" class="p-3 animate__animated animate__fadeInLeft">
+                  <img
+                    :src="`${List.map}`"
+                    class="col-img align-top"
+                    alt="rbd group"
+                  />
+                </b-col>
+                <b-col
+                  lg="5"
+                  class="ml-auto p-3 animate__animated animate__fadeInRight"
+                >
+                  <img
+                    :src="`${List.mapDetail}`"
+                    class="col-img align-top img-detail"
+                    alt="rbd group"
+                  />
+                </b-col>
+              </b-row>
+            </b-container>
           </div>
+          <!--领导团队-->
+          <div class="block-bg p-4 pb-0">
+            <b-container fluid="xl" class="text-light text-center">
+              <b-row class="" align-h="center" align-v="center">
+                <b-col lg="5" class="p-3 animate__animated animate__fadeInLeft">
+                  <img
+                    :src="`${List.team}`"
+                    class="align-center"
+                    alt="rbd group"
+                  />
+                </b-col>
+              </b-row>
+              <b-row class="" align-h="between">
+                <b-col
+                  :lg="key == 2 ? auto : key == 1 ? '3' : '4'"
+                  class="p-3 animate__animated animate__fadeInLeft"
+                  :key="key"
+                  v-for="(obj, key) in List.teamOv"
+                >
+                  <img
+                    :src="`${obj}`"
+                    class="col-img align-top"
+                    alt="rbd group"
+                  />
+                </b-col>
+              </b-row>
+              <b-row class="" align-h="between">
+                <b-col class="p-0 animate__animated animate__fadeInLeft">
+                  <img
+                    :src="`${List.teamPic}`"
+                    class="col-img align-top"
+                    alt="rbd group"
+                  />
+                </b-col>
+              </b-row>
+            </b-container>
+          </div>
+          <!--block-->
+          <div class="page-block p-4">
+            <b-container fluid="xl" class="text-light text-center">
+              <!--合伙人-->
+              <b-row class="mb-3 block-row" align-h="around">
+                <b-col
+                  lg="3"
+                  class="p-4 animate__animated animate__fadeInDown"
+                  :key="key"
+                  v-for="(obj, key) in List.partner"
+                >
+                  <img
+                    :src="`${obj}`"
+                    class="col-img align-top"
+                    alt="rbd group"
+                  />
+                </b-col>
+              </b-row>
+              <!--里程碑-->
+              <b-row class="mb-3 block-row" align-h="around">
+                <b-col
+                  lg="auto"
+                  class="p-3 animate__animated animate__fadeInDown"
+                >
+                  <img
+                    :src="`${List.milepost}`"
+                    class="col-img align-top"
+                    alt="rbd group"
+                  />
+                </b-col>
+              </b-row>
+            </b-container>
+          </div>
+          <!--愿景，使命-->
+          <div class="p-4 pb-0 mb-0">
+            <b-container fluid="xl" class="text-light text-center">
+              <b-row
+                class="bettomBg"
+                align-h="between"
+                :style="`background-image:url(${List.bettomBg})`"
+              >
+                <b-col
+                  :lg="key < 1 ? auto : '6'"
+                  class="p-3 animate__animated animate__fadeInLeft"
+                  :key="key"
+                  v-for="(obj, key) in List.vision"
+                >
+                  <img
+                    :src="`${obj}`"
+                    class="col-img align-top"
+                    alt="rbd group"
+                  />
+                </b-col>
+              </b-row>
+              <!-- <b-row class="" align-h="between">
+                <b-col class="p-0 animate__animated animate__fadeInLeft">
+                  <img
+                    :src="`${List.bettomBg}`"
+                    class="col-img align-top"
+                    alt="rbd group"
+                  />
+                </b-col>
+              </b-row> -->
+            </b-container>
+          </div>
+          <!--end  -->
         </div>
         <div v-else>
           <div
@@ -106,8 +172,7 @@ export default {
   data() {
     return {
       Loading: true,
-      Detail: ContAbout.list,
-      List: [],
+      List: ContAbout.list,
       page: "",
       AuditorCols1: 4,
       AuditorCols2: 8,
@@ -120,9 +185,6 @@ export default {
   mounted(option) {
     var that = this;
     console.log("mounted");
-    const page = that.$route.query.p;
-    that.page = page;
-    that.List = that.Detail[page] || [];
     // this.getAuthority();
     // console.log(that.$route.query);
     if (md.mobile()) {
@@ -134,33 +196,10 @@ export default {
       that.AuditorCols2 = 8;
     }
   },
-  beforeUpdate() {
-    var that = this;
-    console.log("beforeUpdate");
-    var page = this.$route.query.p;
-    console.log(page);
-    if (this.page != page) {
-      this.$nextTick(function () {
-        that.Loading = false;
-        that.page = page;
-        that.List = that.Detail[page] || [];
-      });
-    }
-  },
-  updated() {
-    var that = this;
-    console.log("updated");
-    var page = this.$route.query.p;
-    if (this.page == page) {
-      that.Loading = false;
-    }
-  },
-  beforeDestroy() {
-    console.log("beforeDestroy");
-  },
-  destroyed() {
-    console.log("destroyed");
-  },
+  beforeUpdate() {},
+  updated() {},
+  beforeDestroy() {},
+  destroyed() {},
   methods: {
     onSwiper(swiper) {
       console.log(swiper);
@@ -168,13 +207,16 @@ export default {
     onSlideChange() {
       console.log("slide change");
     },
-    blockDetail(key) {
-      var that = this;
-      // console.log(key);
-      that.List[key]["dShow"] = !that.List[key]["dShow"];
-    },
   },
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+  .bettomBg {
+    background-color: #fff;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 24rem;
+  }
+</style>

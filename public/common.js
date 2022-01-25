@@ -48,14 +48,15 @@ const ContDetail = {
     }
 }
 const ContAbout = {
-    list: {
-        'market': [
-            { "pic": cloudUrl + '/detail/market/1-1.jpg', 'picCont': cloudUrl + '/detail/market/1-2.jpg', 'detail': cloudUrl + '/detail/market/1-3.png', 'dShow': false, "title": "市场现状" },
-            { "pic": cloudUrl + '/detail/market/2-1.jpg', 'picCont': cloudUrl + '/detail/market/2-2.jpg', 'detail': cloudUrl + '/detail/market/2-3.png', 'dShow': false, "title": "行业痛点" },
-            { "pic": cloudUrl + '/detail/market/3-1.jpg', 'picCont': cloudUrl + '/detail/market/3-2.jpg', 'detail': cloudUrl + '/detail/market/3-3.png', 'dShow': false, "title": "市场规模" },
-            { "pic": cloudUrl + '/detail/market/4-1.jpg', 'picCont': cloudUrl + '/detail/market/4-2.jpg', 'detail': cloudUrl + '/detail/market/4-3.png', 'dShow': false, "title": "竞争分析" },
-        ]
-    }
+    list:
+    {
+        "map": cloudUrl + '/about/map.jpg', 'mapDetail': cloudUrl + '/about/map-detail.jpg',
+        'team': cloudUrl + '/about/title1.png', 'teamOv': [cloudUrl + '/about/title1-l1.png', cloudUrl + '/about/title1-l2.png', cloudUrl + '/about/title1-l3.png'], "teamPic": cloudUrl + '/about/jtz.jpg',
+        "partner": [cloudUrl + '/about/p1.jpg', cloudUrl + '/about/p2.jpg', cloudUrl + '/about/p3.jpg', cloudUrl + '/about/p4.jpg'],
+        "milepost": cloudUrl + '/about/lcb.jpg',
+        "vision":[ cloudUrl + '/about/b-v.png',  cloudUrl + '/about/b-m.png'], "bettomBg": cloudUrl + '/about/ljz.jpg',
+    },
+
 }
 // export default {
 //     Logo,
@@ -67,6 +68,6 @@ module.exports = {
     Nav,
     Copyright,
     ContHome,
-    ContDetail, 
+    ContDetail,
     ContAbout
 }
