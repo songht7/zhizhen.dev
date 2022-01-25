@@ -116,7 +116,7 @@
               >
                 <b-col
                   :lg="key < 1 ? auto : '6'"
-                  class="p-3 animate__animated animate__fadeInLeft"
+                  class="p-3 animate__animated animate__fadeIn"
                   :key="key"
                   v-for="(obj, key) in List.vision"
                 >
