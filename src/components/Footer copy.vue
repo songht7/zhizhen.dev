@@ -1,32 +1,11 @@
 <template>
   <div id="Footer-box">
     <div class="footer-block">
-      <b-navbar class="" toggleable="lg" type="light">
-        <b-container fluid="xl" class="footer-nav">
-          <b-navbar-brand href="/" class=" mr-5">
-            <img
-              id="LogoFooter"
-              class="d-inline-block align-top"
-              :src="`${logo.white}`"
-              alt="rbd group"
-            />
-          </b-navbar-brand>
-          <b-navbar-nav class="nav-bar-main" small>
-            <b-nav-item
-              class="nav-btn-footer"
-              :href="`${obj.url}`"
-              @click="animated"
-              :key="key"
-              v-for="(obj, key) in navs"
-              >{{ obj.en }}</b-nav-item
-            >
-          </b-navbar-nav>
-        </b-container>
-      </b-navbar>
-      <!-- <b-container fluid="xl">
+      <b-container fluid="xl">
         <b-row class="footer-nav justify-content-md-center" align-h="between" align-content='center' align-v="end">
           <b-col md="1">
             <a href="/">
+              <!-- <b-img :src="`${logo.white}`" fluid alt="rbd group"></b-img> -->
               <img
                 :src="`${logo.white}`"
                 class="logo-footer col-img align-top"
@@ -47,7 +26,7 @@
             </b-nav>
           </b-col>
         </b-row>
-      </b-container> -->
+      </b-container>
     </div>
     <div class="footer-block footer-block-cr">
       <b-container fluid="xl">
