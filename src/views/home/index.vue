@@ -20,7 +20,7 @@
       </div>
       <!-- block-bg -->
       <div class="page-block">
-        <b-container fluid="xl" class="text-light text-center">
+        <b-container fluid="xl" class="text-center">
           <b-row
             class="mb-3 block-row"
             align-h="between"
@@ -34,12 +34,14 @@
                 alt="rbd group"
               />
             </b-col>
-            <b-col lg="5" class="ml-auto p-3 animate__animated animate__fadeInRight">
-              <img
+            <b-col lg="5" class="ml-auto p-3 text-right animate__animated animate__fadeInRight">
+              <!-- <img
                 :src="`${obj.picCont}`"
                 class="col-img align-top"
                 alt="rbd group"
-              />
+              /> -->
+              <div v-html="obj.title"></div>
+              <div v-html="obj.des"></div>
             </b-col>
           </b-row>
         </b-container>

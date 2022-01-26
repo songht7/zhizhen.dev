@@ -1,23 +1,24 @@
 #Page-main {
-  position        : relative;
+  position: relative;
   background-color: #fff;
+  color: #7d7d7d;
 }
 
 #Logo {
-  height    : 90%;
-  width     : auto;
+  height: 90%;
+  width: auto;
   max-height: 65px;
 }
 
 .navbar-box {
   // position: fixed;
-  top          : 0;
-  left         : 0;
-  width        : 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
   // height: 60px;
-  background   : #03448d;
-  z-index      : 10;
-  padding-top  : 1rem;
+  background: #03448d;
+  z-index: 10;
+  padding-top: 1rem;
   border-bottom: 1px solid #03448d;
 }
 
@@ -40,7 +41,7 @@
 
 .nav-bar {
   background-color: #e6e6e6;
-  border-bottom   : 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
 }
 
 .nav-btn {
@@ -53,7 +54,7 @@
 
 .navbar-light .navbar-nav .nav-link {
   font-size: 20px;
-  color    : #595757;
+  color: #595757;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -77,29 +78,29 @@
 }
 
 .block-row {
-  border-bottom : 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
   padding-bottom: 2rem;
-  margin-bottom : 2rem;
+  margin-bottom: 2rem;
 }
 
 .block-row-bold {
   border-bottom-width: .125rem;
   border-bottom-color: #7d7d7d;
-  padding            : 4rem 0;
-  margin-bottom      : 0;
+  padding: 4rem 0;
+  margin-bottom: 0;
 }
 
 .block-detail {
   background-color: #eeeeef;
-  position        : relative;
-  padding         : 4rem 0;
-  overflow        : hidden;
+  position: relative;
+  padding: 4rem 0;
+  overflow: hidden;
 }
 
 .detail-arrow {
   position: absolute;
-  top     : -3px;
-  right   : 16%;
+  top: -3px;
+  right: 16%;
 }
 
 .img-detail:hover {
@@ -107,11 +108,11 @@
 }
 
 .pro-block {
-  background   : #e6e6e6;
-  color        : #7d7d7d;
+  background: #e6e6e6;
+  color: #7d7d7d;
   border-radius: .3rem;
-  display      : block;
-  overflow     : hidden;
+  display: block;
+  overflow: hidden;
 }
 
 .pro-block:hover {
@@ -123,23 +124,23 @@
 }
 
 .p-title {
-  display    : block;
-  padding    : .4rem 0;
+  display: block;
+  padding: .4rem 0;
   line-height: 1.8;
-  font-size  : 1.45rem;
+  font-size: 1.45rem;
 }
 
 .brow {
   padding-bottom: 15px;
-  line-height   : 1.4;
+  line-height: 1.4;
 }
 
 .temp-row,
 .temp-row div,
 .temp-row a,
 .temp-row p {
-  color      : rgb(33, 37, 41);
-  font-size  : 1.25rem;
+  color: rgb(33, 37, 41);
+  font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -150,13 +151,17 @@
 
 .col-img {
   display: inline;
-  width  : 100%;
+  width: 100%;
+}
+
+.col-img-md {
+  width: 90%;
 }
 
 .col-img-full {
   display: inline-block;
-  width  : 100%;
-  height : 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .line-lg {
@@ -169,9 +174,9 @@
 
 .alert-block {
   position: absolute;
-  top     : -150%;
-  left    : 0;
-  width   : 100%;
+  top: -150%;
+  left: 0;
+  width: 100%;
 }
 
 .sec-box {
@@ -179,33 +184,33 @@
 }
 
 #Section-nav {
-  position        : fixed;
-  top             : 12rem;
-  width           : inherit;
-  padding         : 2rem .5rem;
-  border-radius   : 1rem;
+  position: fixed;
+  top: 12rem;
+  width: inherit;
+  padding: 2rem .5rem;
+  border-radius: 1rem;
   background-color: rgba(255, 255, 255, .8);
 }
 
 #Section-nav .nav-link {
-  display      : inline-block;
-  padding      : 0;
-  width        : 80%;
+  display: inline-block;
+  padding: 0;
+  width: 80%;
   margin-bottom: 1rem;
-  color        : #333;
+  color: #333;
 }
 
 .mb-nav .sec-nav-item {
   border-bottom: 1px solid #ccc;
   margin-bottom: 1rem;
-  padding-left : 1rem;
+  padding-left: 1rem;
 }
 
 .p-line {
-  display      : block;
-  height       : 2rem;
+  display: block;
+  height: 2rem;
   border-bottom: 1px solid #666;
-  width        : 100%;
+  width: 100%;
 }
 
 .rbd-input,
@@ -219,35 +224,35 @@
 
 /*icon*/
 .icon-block {
-  position    : relative;
+  position: relative;
   padding-left: 1.5rem;
 }
 
 .icon-block::before {
-  content            : "●";
-  color              : #333;
-  width              : 1rem;
-  height             : 1.5rem;
-  background-image   : none;
+  content: "●";
+  color: #333;
+  width: 1rem;
+  height: 1.5rem;
+  background-image: none;
   background-position: 50% 50%;
-  background-repeat  : no-repeat;
-  background-size    : contain;
-  position           : absolute;
-  left               : 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 0;
 }
 
 .icon-location::before {
-  content         : " ";
+  content: " ";
   background-image: url(../images/icon/location.png);
 }
 
 .icon-phone::before {
-  content         : " ";
+  content: " ";
   background-image: url(../images/icon/cell.png);
 }
 
 .icon-email::before {
-  content         : " ";
+  content: " ";
   background-image: url(../images/icon/email.png);
 }
 
@@ -266,32 +271,36 @@
 
 // #Footer-box {}
 .footer-block {
-  padding   : 50px 0;
+  padding: 50px 0;
   background: #03448d;
 }
 
-.footer-nav,.navbar > .container-xl.footer-nav {
+.footer-nav,
+.navbar>.container-xl.footer-nav {
   align-items: flex-end;
   align-content: flex-start;
   justify-content: flex-start;
 }
 
 .logo-footer {
-  display   : inline-block;
-  width     : auto;
+  display: inline-block;
+  width: auto;
   max-height: 50px;
 }
 
-.footer-nav .nav-btn .nav-link,.footer-nav .nav-btn-footer .nav-link {
+.footer-nav .nav-btn .nav-link,
+.footer-nav .nav-btn-footer .nav-link {
   font-size: 1rem;
   color: #fff;
 }
-.footer-nav .nav-btn .nav-link:hover,.footer-nav .nav-btn-footer .nav-link:hover {
+
+.footer-nav .nav-btn .nav-link:hover,
+.footer-nav .nav-btn-footer .nav-link:hover {
   color: rgb(199, 199, 199);
 }
 
 .footer-block-cr {
-  padding   : 25px 0;
+  padding: 25px 0;
   background: #000000;
 }
 
@@ -301,9 +310,10 @@
 
 .copyright a,
 .copyright p {
-  color    : #ffffff;
+  color: #ffffff;
   font-size: 1rem;
 }
+
 #LogoFooter {
   max-height: 60px;
 }
@@ -312,6 +322,7 @@
   #Logo {
     max-height: 40px;
   }
+
   #LogoFooter {
     max-height: 50px;
   }
@@ -334,13 +345,14 @@
   }
 
   .container-xl {
-    padding-left : 1.5rem;
+    padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 
   #Logo {
     max-height: 60px;
   }
+
   #LogoFooter {
     max-height: 140px;
   }
@@ -354,7 +366,7 @@
   }
 
   .navbar-toggler-icon {
-    width : 3.5em;
+    width: 3.5em;
     height: 3.5em;
   }
 
@@ -369,17 +381,19 @@
   .navbar-light .navbar-nav .nav-link {
     font-size: 2rem;
   }
-  .copyright a, .copyright p {
+
+  .copyright a,
+  .copyright p {
     color: #ffffff;
     font-size: 2rem;
-}
+  }
 
   .lead,
   .temp-row,
   .temp-row div,
   .temp-row a,
   .temp-row p {
-    font-size  : 3rem;
+    font-size: 3rem;
     line-height: 1.4;
   }
 
@@ -389,9 +403,9 @@
 
   .form-control,
   .btn {
-    font-size  : 2rem;
+    font-size: 2rem;
     line-height: 1.4;
-    padding    : 1.5rem;
+    padding: 1.5rem;
   }
 
   // #Contact .temp-row,
@@ -400,7 +414,7 @@
   // }
 
   #Section-nav .nav-link {
-    font-size  : 2rem;
+    font-size: 2rem;
     line-height: 1.2;
   }
 
@@ -409,8 +423,8 @@
   }
 
   .icon-block::before {
-    width : 3rem;
+    width: 3rem;
     height: 3.5rem;
-    top   : .5rem;
+    top: .5rem;
   }
 }

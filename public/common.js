@@ -31,36 +31,36 @@ const ContHome = {
     {
       pic: cloudUrl + "/home/L1-0.jpg",
       picCont: cloudUrl + "/home/L1-1.jpg",
-      title: "<p>我们的使命</p>",
-      des: "<p>为客户创造真实持久的价值</p><p>为员工创造持续发展的机会</p>",
+      title: "<h1 class='title'>我们的使命</h1>",
+      des: "<div class='des'><p>为客户创造真实持久的价值</p><p>为员工创造持续发展的机会</p></div>",
     },
     {
       pic: cloudUrl + "/home/L2-0.jpg",
       picCont: cloudUrl + "/home/L2-1.jpg",
-      title: "<p>品质保障</p><p>真实持久的价值</p>",
+      title: "<h1 class='title'><p>品质保障</p><p>真实持久的价值</p></h1>",
       des:
-        "<p>我们的承诺与保证</p><p>更专业、更及时、更有效</p><p>&nbsp;</p><p>Our Commitments & Warranties<br/>Professional Promptly Efficient</p>",
+        "<div class='subDes'><p>我们的承诺与保证</p><p>更专业、更及时、更有效</p></div><div class='subDes threeDes'><p>Our Commitments & Warranties<br/>Professional Promptly Efficient</p></div>",
     },
     {
       pic: cloudUrl + "/home/L3-0.jpg",
       picCont: cloudUrl + "/home/L3-1.jpg",
-      title: "<p>提供集成  解决方案</p>",
+      title: "<h1 class='title'>提供集成  解决方案</h1>",
       des:
-        "<p>技术服务、质量服务、制造支持服务</p><p>&nbsp;</p><p>Quality Service<br/>Technical Service<br/>Production Support Service</p>",
+        "<div class='subDes'><p>技术服务、质量服务、制造支持服务</p></div><div class='subDes threeDes'><p>Quality Service<br/>Technical Service<br/>Production Support Service</p></div>",
     },
     {
       pic: cloudUrl + "/home/L4-0.jpg",
       picCont: cloudUrl + "/home/L4-1.jpg",
-      title: "<p>高素质  训练团队</p>",
+      title: "<h1 class='title'>高素质  训练团队</h1>",
       des:
-        "<p>检验员团队搭建、供应商能力提升、质量体系培训、质量工具培训</p><p>&nbsp;</p><p>Inspector Team Build<br/>Supplier Capability Promotion<br/>Quality System Training<br/>Quality tools Training</p>",
+        "<div class='subDes'><p>检验员团队搭建、供应商能力提升、质量体系培训、质量工具培训</p></div><div class='subDes threeDes'><p>Inspector Team Build<br/>Supplier Capability Promotion<br/>Quality System Training<br/>Quality tools Training</p></div>",
     },
     {
       pic: cloudUrl + "/home/L5-0.jpg",
       picCont: cloudUrl + "/home/L5-1.jpg",
-      title: "<p>质量管理  信息化</p>",
+      title: "<h1 class='title'>质量管理  信息化</h1>",
       des:
-        "<p>大量制造型企业的真实数据、<br/>大量的质量服务经验、<br/>优质客户的需求、完善的解决方案</p><p>&nbsp;</p><p>Inspector Team Build<br/>Supplier Capability Promotion<br/>Quality System Training<br/>Quality tools Training</p>",
+        "<div class='subDes'><p>大量制造型企业的真实数据、<br/>大量的质量服务经验、<br/>优质客户的需求、完善的解决方案</p></div><div class='subDes threeDes'><p>Inspector Team Build<br/>Supplier Capability Promotion<br/>Quality System Training<br/>Quality tools Training</p></div>",
     },
   ],
   product: [
@@ -77,6 +77,7 @@ const ContDetail = {
     market: [
       {
         pic: cloudUrl + "/detail/market/1-1.jpg",
+        picContTitle: cloudUrl + "/detail/market/1-2-title.jpg",
         picCont: cloudUrl + "/detail/market/1-2.jpg",
         detail: cloudUrl + "/detail/market/1-3.png",
         dShow: false,

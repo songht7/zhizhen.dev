@@ -20,7 +20,7 @@
         <div v-if="List && List.length">
           <div :key="key" v-for="(obj, key) in List">
             <div class="block-row block-row-bold">
-              <b-container fluid="xl" class="text-light text-center">
+              <b-container fluid="xl" class="">
                 <b-row class="" align-h="between">
                   <b-col
                     lg="5"
@@ -36,6 +36,13 @@
                     lg="5"
                     class="ml-auto p-3 animate__animated animate__fadeInRight"
                   >
+                    <h1 class="title pLeft5">{{ obj.title }}</h1>
+                    <!-- <img
+                      v-if="obj.picContTitle"
+                      :src="`${obj.picContTitle}`"
+                      class="col-img align-top img-detail"
+                      alt="rbd group"
+                    /> -->
                     <img
                       :src="`${obj.picCont}`"
                       class="col-img align-top img-detail"
@@ -65,7 +72,7 @@
                   <b-col lg="12" class="p-3">
                     <img
                       :src="`${obj.detail}`"
-                      class="col-img align-top"
+                      class="col-img align-top col-img-md"
                       alt="rbd group"
                     />
                   </b-col>
@@ -140,7 +147,7 @@ export default {
     var page = this.$route.query.p;
     console.log(page);
     if (this.page != page) {
-      this.$nextTick(function () {
+      this.$nextTick(function() {
         that.Loading = false;
         that.page = page;
         that.List = that.Detail[page] || [];

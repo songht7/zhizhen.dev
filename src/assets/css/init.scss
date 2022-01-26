@@ -5,35 +5,65 @@
 //       url('../font/字体名称.ttf') format('truetype'),
 //       url('../font/字体名称.svg') format('svg');
 // }
-@font-face{
-  font-family: '圆体'; 
-  src:url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJY.TTF') format('truetype');
+@font-face {
+  font-family: 'JDJY'; //圆体
+  src: url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJY.TTF') format('truetype');
 }
-@font-face{
-  font-family: '圆体粗'; 
-  src:url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYCU.TTF') format('truetype');
+
+@font-face {
+  font-family: 'JDJYCU'; //圆体粗
+  src: url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYCU.TTF') format('truetype');
 }
-@font-face{
-  font-family: '圆体细'; 
-  src:url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYX.TTF') format('truetype');
+
+@font-face {
+  font-family: 'JDJYX'; //圆体细
+  src: url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYX.TTF') format('truetype');
 }
+
 body,
 html {
   width: 100%;
   height: 100%;
-  font-family: '圆体细','Source Han Sans',"Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'JDJYX', 'Source Han Sans', "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   // font-weight: 400;
   font-variant: tabular-nums;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   background-color: #000;
 }
-.h1-title{
-  font-family: '圆体粗',
+
+h1.title {
+  font-size: 2.8rem;
+  font-family: 'JDJYCU';
+  letter-spacing: 0.5rem;
 }
-.h2-title{
-  font-family: '圆体',
+
+.des,
+.subDes,
+.threeDes {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  color: #7e7e7e;
+  font-family: 'JDJY';
+  padding-bottom: 1rem;
 }
+
+.subDes {
+  font-size: 1.2rem;
+}
+
+.threeDes {
+  color: #a4a4a4;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.pLeft5 {
+  padding-left: 1.5rem;
+}
+
 * {
   box-sizing: border-box;
 }
