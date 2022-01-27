@@ -42,7 +42,7 @@
                 >
                   <img
                     :src="`${obj.titlePic}`"
-                    class="col-img align-top"
+                    class="col-img align-top img-title"
                     :alt="`${obj.title}`"
                   />
                 </b-col>
@@ -88,7 +88,7 @@
                   >
                     <img
                       :src="`${obj.titlePic}`"
-                      class="col-img align-top"
+                      class="col-img align-top img-title"
                       :alt="`${obj.title}`"
                     />
                   </b-col>
