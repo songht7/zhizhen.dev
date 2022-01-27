@@ -13,7 +13,7 @@ const Nav = [
   {
     cn: "发展前景",
     en: "DEVELOPMENT PROSPECT",
-    url: "/#/detail/index?p=develop",
+    url: "/#/develop/index",
   },
   { cn: "品牌文化", en: "BRAND CULTURE", url: "/#/detail/index?p=brand" },
   { cn: "联系我们", en: "CONTACT US", url: "/#/contact/index" },
@@ -163,6 +163,35 @@ const ContService = {
   ],
   bettomBg: cloudUrl + "/service/bottom-bg.jpg",
 };
+const ContDevelop = {
+  id: "Develop",
+  banner: cloudUrl + "/develop/banner.jpg",
+  list: [
+    {
+      title: "项目模式",
+      titlePic: cloudUrl + "/develop/l-1-title.png",
+      pic: [cloudUrl + "/develop/l-1-1.png", cloudUrl + "/develop/l-1-2.png", cloudUrl + "/develop/l-1-3.png"],
+      line: true,
+      full: false
+    },
+    {
+      title: "收益分析",
+      titlePic: cloudUrl + "/develop/l-2-title.png",
+      pic: [cloudUrl + "/develop/l-2-1.png"],
+      line: false,
+      full: true
+    },
+    {
+      title: "竞争优势",
+      titlePic: cloudUrl + "/develop/l-3-title.png",
+      pic: [cloudUrl + "/develop/l-3-1.png", cloudUrl + "/develop/l-3-2.png"],
+      line: false,
+      full: true
+    },
+  ],
+  bg1: cloudUrl + "/develop/bg1.jpg",
+  bg2: cloudUrl + "/develop/bg2.jpg",
+};
 // export default {
 //     Logo,
 //     Nav
@@ -176,4 +205,5 @@ module.exports = {
   ContDetail,
   ContAbout,
   ContService,
+  ContDevelop
 };

@@ -49,6 +49,11 @@ export default new Router({
       component: () => import('@/views/service/index'),
     },
     {
+      path: "/develop/index",//
+      name: "Develop",
+      component: () => import("@/views/develop/index"),
+    },
+    {
       path: '/contact/index',
       name: 'Contact',
       component: () => import('@/views/contact/index'),
