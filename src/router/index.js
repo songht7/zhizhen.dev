@@ -58,6 +58,11 @@ export default new Router({
       name: 'Contact',
       component: () => import('@/views/contact/index'),
     },
+    {
+      path: '/CustomerManage/index',//客户管理系统
+      name: 'CustomerManage',
+      component: () => import('@/views/CustomerManage/index'),
+    },
     // Login,
     ...auit
   ],

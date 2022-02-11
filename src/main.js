@@ -33,6 +33,8 @@ Vue.config.productionTip = false;
 
 Object.setPrototypeOf = require("setprototypeof"); //解决ie兼容性
 
+import "vis/dist/vis.min.css"
+
 import moment from "moment";
 import "moment/locale/zh-cn";
 moment.locale("zh-cn");
