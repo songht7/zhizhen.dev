@@ -1,8 +1,22 @@
 module.exports = {
   visNodes: [
     {
-      id: 0,
+      id: -1,
       label: "质贞集团",
+      color: {
+        background: "#91aeef",
+      },
+    },
+    {
+      id: -2,
+      label: "ABC有限公司",
+      color: {
+        background: "#bff3bb",
+      },
+    },
+    {
+      id: 0,
+      label: "销售部",
       color: {
         background: "yellow",
       },
