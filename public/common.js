@@ -15,7 +15,7 @@ const Nav = [
     en: "DEVELOPMENT PROSPECT",
     url: "/#/develop/index",
   },
-  { cn: "品牌文化", en: "BRAND CULTURE", url: "/#/detail/index?p=brand" },
+  { cn: "品牌文化", en: "BRAND CULTURE", url: "/#/brand/index" },
   { cn: "联系我们", en: "CONTACT US", url: "/#/contact/index" },
 ];
 const Copyright = {
@@ -192,6 +192,47 @@ const ContDevelop = {
   bg1: cloudUrl + "/develop/bg1.jpg",
   bg2: cloudUrl + "/develop/bg2.jpg",
 };
+const ContBrand = {
+  id: "Brand",
+  banner: cloudUrl + "/brand/banner.jpg",
+  list: [
+    {
+      title: "我们的使命",
+      titlePic: cloudUrl + "/brand/2-title.png",
+      pic: [cloudUrl + "/brand/2-1.png"],
+      line: false,
+      full: false
+    },
+    {
+      title: "图片",
+      titlePic: "",
+      pic: [cloudUrl + "/brand/1-1.jpg"],
+      line: false,
+      full: true
+    },
+    {
+      title: "我们的承诺与保证",
+      titlePic: cloudUrl + "/brand/3-title.png",
+      pic: [cloudUrl + "/brand/3-1.png", cloudUrl + "/brand/3-2.png", cloudUrl + "/brand/3-3.png"],
+      line: false,
+      full: false
+    },
+    {
+      title: "图片",
+      titlePic: "",
+      pic: [cloudUrl + "/brand/4-1.jpg"],
+      line: false,
+      full: true
+    },
+    {
+      title: "图片",
+      titlePic: "",
+      pic: [cloudUrl + "/brand/5-1.png"],
+      line: false,
+      full: false
+    },
+  ]
+};
 // export default {
 //     Logo,
 //     Nav
@@ -205,5 +246,6 @@ module.exports = {
   ContDetail,
   ContAbout,
   ContService,
-  ContDevelop
+  ContDevelop,
+  ContBrand
 };

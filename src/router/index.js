@@ -29,32 +29,37 @@ export default new Router({
       // ]
     },
     {
-      path: "/home/index",
+      path: "/home/index",//首页
       name: "Index",
       component: () => import("@/views/home/index"),
     },
     {
-      path: "/about/index",//
+      path: "/about/index",//关于我们
       name: "About",
       component: () => import("@/views/about/index"),
     },
     {
-      path: "/detail/index",//
+      path: "/detail/index",//市场优势、详情
       name: "Detail",
       component: () => import("@/views/detail/index"),
     },
     {
-      path: '/service/index',
+      path: '/service/index',//服务流程
       name: 'Service',
       component: () => import('@/views/service/index'),
     },
     {
-      path: "/develop/index",//
+      path: "/develop/index",//发展前景
       name: "Develop",
       component: () => import("@/views/develop/index"),
     },
     {
-      path: '/contact/index',
+      path: "/brand/index",//品牌文化
+      name: "Brand",
+      component: () => import("@/views/brand/index"),
+    },
+    {
+      path: '/contact/index',//联系我们
       name: 'Contact',
       component: () => import('@/views/contact/index'),
     },

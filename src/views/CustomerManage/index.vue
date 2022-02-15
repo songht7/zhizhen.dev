@@ -52,7 +52,8 @@ export default {
       // network:null,
       container: null,
       //   节点数组
-      nodesArray: visNodes,
+      visNodes: visNodes,
+      nodesArray: [],
       //   关系线数组
       edgesArray: visEdges,
       options: {},
@@ -65,6 +66,9 @@ export default {
     //   if (err) console.error(err);
     //   console.log("异步读取文件数据：" + data.toString());
     // });
+    let na=this.visNodes.filter((obj) => obj.label == "三大主流框架");
+    console.log(na)
+    this.nodesArray = this.visNodes;
     this.init();
     // 点击事件
     this.network.on("click", (params) => {
@@ -119,7 +123,7 @@ export default {
 
         // 设置节点样式
         nodes: {
-          shape: "circle",//ellipse, circle, database, box, text
+          shape: "circle", //ellipse, circle, database, box, text
           size: 50,
           font: {
             //字体配置
