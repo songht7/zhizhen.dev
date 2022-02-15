@@ -37,7 +37,7 @@
 */
 import Vis from "vis";
 import { ContHome } from "@public/common";
-
+// var fs = require("fs");
 var MobileDetect = require("mobile-detect"),
   md = new MobileDetect(navigator.userAgent);
 export default {
@@ -107,6 +107,20 @@ export default {
             background: "pink",
           },
         },
+        {
+          id: 8,
+          label: "HTML5",
+          color: {
+            background: "pink",
+          },
+        },
+        {
+          id: 9,
+          label: "CSS3",
+          color: {
+            background: "pink",
+          },
+        },
       ],
       //   关系线数组
       edgesArray: [
@@ -150,6 +164,11 @@ export default {
           to: 7,
           label: "step2",
         },
+        {
+          from: 8,
+          to: 9,
+          label: "step2",
+        },
       ],
       options: {},
       data: {},
@@ -157,6 +176,10 @@ export default {
   },
   components: {},
   mounted() {
+    // fs.readFile("@public/data.json", function (err, data) {
+    //   if (err) console.error(err);
+    //   console.log("异步读取文件数据：" + data.toString());
+    // });
     this.init();
     // 点击事件
     this.network.on("click", (params) => {
