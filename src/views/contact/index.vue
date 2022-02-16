@@ -20,6 +20,8 @@
 </template>
 
 <script>
+import { ContContact } from "@public/common";
+
 import ContactUs from "@/components/ContactUs";
 
 var MobileDetect = require("mobile-detect"),
@@ -27,6 +29,8 @@ var MobileDetect = require("mobile-detect"),
 export default {
   data() {
     return {
+      Loading: true,
+      Cont: ContContact,
       AuditorCols1: 4,
       AuditorCols2: 8,
     };
