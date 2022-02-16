@@ -44,11 +44,11 @@
           </b-row>
         </b-container>
       </div>
-      <div class="page-block block-bg">
+      <!-- <div class="page-block block-bg">
         <b-container fluid="xl">
           <ContactUs></ContactUs>
         </b-container>
-      </div>
+      </div> -->
     </div>
     <Footer></Footer>
   </div>

@@ -2,7 +2,7 @@
   <div class="form-box">
     <b-container class="bv-example-row">
       <b-row>
-        <!-- <b-col :cols="ContactCols">
+        <b-col :cols="ContactCols">
           <b-row>
             <b-jumbotron>
               <template v-slot:header>
@@ -57,7 +57,7 @@
               </b-row>
             </div>
           </b-row>
-        </b-col> -->
+        </b-col>
         <!-- <b-col cols="2"> </b-col> -->
         <b-col :cols="ContactCols">
           <b-col>
