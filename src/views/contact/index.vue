@@ -9,7 +9,42 @@
         `duration-${$store.state.animated.duration}`,
       ]"
     >
-      <div id="Contact" class="page-block block-bg">
+      <div id="Contact" class="page-block">
+        <div class="brow img-full animate__animated animate__fadeIn">
+          <img
+            :src="`${Cont.banner}`"
+            class="col-img col-img-full align-top"
+            alt="rbd group"
+          />
+        </div>
+      </div>
+      <div class="page-block">
+        <b-container fluid="xl" class="text-left">
+          <b-row
+            class="mb-3"
+            :key="key"
+            v-for="(obj, key) in Cont.list"
+          >
+            <b-col lg="6" class="p-3 animate__animated animate__fadeInLeft">
+              <img
+                :src="`${obj.pic}`"
+                class="col-img align-top"
+                alt="rbd group"
+              />
+            </b-col>
+            <b-col lg="6" class="ml-auto p-3 animate__animated animate__fadeInRight">
+              <!-- <img
+                :src="`${obj.picCont}`"
+                class="col-img align-top"
+                alt="rbd group"
+              /> -->
+              <div v-html="obj.title"></div>
+              <div v-html="obj.address"></div>
+            </b-col>
+          </b-row>
+        </b-container>
+      </div>
+      <div class="page-block block-bg">
         <b-container fluid="xl">
           <ContactUs></ContactUs>
         </b-container>
