@@ -38,7 +38,7 @@
               <b-row class="" align-h="around">
                 <b-col
                   lg="auto"
-                  class="pb-5 mb-5 animate__animated animate__lightSpeedInLeft"
+                  class="pb-5 mb-5 animate__animated animate__fadeIn"
                 >
                   <img
                     :src="`${obj.titlePic}`"
@@ -58,7 +58,7 @@
               >
                 <b-col
                   lg="auto"
-                  class="p-3 animate__animated animate__lightSpeedInLeft"
+                  class="p-3 animate__animated animate__fadeIn"
                 >
                   <img
                     :src="`${obj2}`"
@@ -83,7 +83,7 @@
                     class="
                       pb-5
                       mb-5
-                      animate__animated animate__lightSpeedInLeft
+                      animate__animated animate__fadeIn
                     "
                   >
                     <img
@@ -100,7 +100,7 @@
                   class="
                     col-img
                     align-top
-                    animate__animated animate__lightSpeedInLeft
+                    animate__animated animate__fadeIn
                   "
                   alt="rbd group"
                 />

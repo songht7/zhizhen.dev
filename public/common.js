@@ -5,6 +5,7 @@ const Logo = {
   deep: cloudUrl + "/logo.png",
   white: cloudUrl + "/logo-white.png",
 };
+/* 菜单 */
 const Nav = [
   { cn: "首页", en: "HOME", url: "/" },
   { cn: "市场优势", en: "MARKET ADVANTAGE", url: "/#/detail/index?p=market" },
@@ -18,13 +19,15 @@ const Nav = [
   { cn: "品牌文化", en: "BRAND CULTURE", url: "/#/brand/index" },
   { cn: "联系我们", en: "CONTACT US", url: "/#/contact/index" },
 ];
+/* Copyright */
 const Copyright = {
   icp: "沪ICP备19019514号-1",
   gov: "31011202011780",
   copyight: "Copyright©2019-2022",
-  company: "上海技优网络科技有限公司 - 质贞平台",
-  address: "上海黄浦区西藏南路218号永银大厦5层591",
+  company: "上海技优网络科技有限公司 - 质贞集团",
+  address: "上海市黄浦区桃源路85号永银大厦591室",
 };
+/* 首页 */
 const ContHome = {
   banner: cloudUrl + "/home/1.jpg",
   list: [
@@ -64,13 +67,14 @@ const ContHome = {
     },
   ],
   product: [
-    { pic: cloudUrl + "/home/p1.jpg", title: "产品检验" },
-    { pic: cloudUrl + "/home/p2.jpg", title: "产品返修" },
-    { pic: cloudUrl + "/home/p3.jpg", title: "检测服务" },
-    { pic: cloudUrl + "/home/p4.jpg", title: "技术支持" },
-    { pic: cloudUrl + "/home/p5.jpg", title: "培训服务" },
+    { pic: cloudUrl + "/home/p1.png", title: "产品检验" },
+    { pic: cloudUrl + "/home/p2.png", title: "产品返修" },
+    { pic: cloudUrl + "/home/p3.png", title: "检测服务" },
+    { pic: cloudUrl + "/home/p4.png", title: "技术支持" },
+    { pic: cloudUrl + "/home/p5.png", title: "培训服务" },
   ],
 };
+/* 市场优势详细 */
 const ContDetail = {
   list: {
     /*市场优势*/
@@ -109,6 +113,7 @@ const ContDetail = {
     service: [],
   },
 };
+/* 关于我们 */
 const ContAbout = {
   list: {
     map: cloudUrl + "/about/map.jpg",
@@ -131,6 +136,7 @@ const ContAbout = {
     bettomBg: cloudUrl + "/about/ljz.jpg",
   },
 };
+/* 服务流程 */
 const ContService = {
   banner: cloudUrl + "/service/banner.jpg",
   flowChart: cloudUrl + "/service/flow-chart.png",
@@ -163,6 +169,7 @@ const ContService = {
   ],
   bettomBg: cloudUrl + "/service/bottom-bg.jpg",
 };
+/* 发展前景 */
 const ContDevelop = {
   id: "Develop",
   banner: cloudUrl + "/develop/banner.jpg",
@@ -192,6 +199,7 @@ const ContDevelop = {
   bg1: cloudUrl + "/develop/bg1.jpg",
   bg2: cloudUrl + "/develop/bg2.jpg",
 };
+/* 品牌文化 */
 const ContBrand = {
   id: "Brand",
   banner: cloudUrl + "/brand/banner.jpg",
@@ -233,6 +241,7 @@ const ContBrand = {
     },
   ]
 };
+/* 联系我们 */
 const ContContact = {
   id: "Contact",
   banner: cloudUrl + "/contact/banner.jpg",

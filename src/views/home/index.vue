@@ -27,14 +27,14 @@
             :key="key"
             v-for="(obj, key) in Cont.list"
           >
-            <b-col lg="5" class="p-3 animate__animated animate__fadeInLeft">
+            <b-col lg="5" class="p-3 animate__animated animate__fadeIn">
               <img
                 :src="`${obj.pic}`"
                 class="col-img align-top"
                 alt="rbd group"
               />
             </b-col>
-            <b-col lg="5" class="ml-auto p-3 text-right animate__animated animate__fadeInRight">
+            <b-col lg="5" class="ml-auto p-3 text-right animate__animated animate__fadeIn">
               <!-- <img
                 :src="`${obj.picCont}`"
                 class="col-img align-top"
@@ -56,7 +56,7 @@
               :key="key"
               v-for="(obj, key) in Cont.product"
             >
-              <a class="pro-block" href="#">
+              <a class="pro-block" href="#" >
                 <!-- <b-img
                   :src="`${obj.pic}`"
                   fluid
@@ -68,7 +68,7 @@
                 class="col-img align-top"
                 alt="rbd group"
               />
-                <div class="p-title">{{ obj.title }}</div>
+                <!-- <div class="p-title">{{ obj.title }}</div> -->
               </a>
             </b-col>
           </b-row>

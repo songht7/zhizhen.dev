@@ -1,9 +1,9 @@
 <template>
   <div id="Footer-box">
     <div class="footer-block">
-      <b-navbar class="" toggleable="lg" type="light">
+      <b-navbar class="nav-bar-footer" toggleable="lg" type="dark">
         <b-container fluid="xl" class="footer-nav">
-          <b-navbar-brand href="/" class=" mr-5">
+          <b-navbar-brand href="/" class="mr-5">
             <img
               id="LogoFooter"
               class="d-inline-block align-top"
@@ -11,16 +11,20 @@
               alt="rbd group"
             />
           </b-navbar-brand>
-          <b-navbar-nav class="nav-bar-main" small>
-            <b-nav-item
-              class="nav-btn-footer"
-              :href="`${obj.url}`"
-              @click="animated"
-              :key="key"
-              v-for="(obj, key) in navs"
-              >{{ obj.en }}</b-nav-item
-            >
-          </b-navbar-nav>
+          <b-navbar-toggle class="nav-tog" target="nav-Footer-collapse">
+          </b-navbar-toggle>
+          <b-collapse class="" is-nav id="nav-Footer-collapse">
+            <b-navbar-nav class="nav-bar-main" >
+              <b-nav-item
+                class="nav-btn-footer"
+                :href="`${obj.url}`"
+                @click="animated"
+                :key="key"
+                v-for="(obj, key) in navs"
+                >{{ obj.en }}</b-nav-item
+              >
+            </b-navbar-nav>
+          </b-collapse>
         </b-container>
       </b-navbar>
       <!-- <b-container fluid="xl">

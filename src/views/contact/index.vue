@@ -26,14 +26,14 @@
             :key="key"
             v-for="(obj, key) in Cont.list"
           >
-            <b-col lg="6" class="p-3 animate__animated animate__fadeInLeft">
+            <b-col lg="6" class="p-3 animate__animated animate__fadeIn">
               <img
                 :src="`${obj.pic}`"
                 class="col-img align-top"
                 alt="rbd group"
               />
             </b-col>
-            <b-col lg="6" class="ml-auto p-3 animate__animated animate__fadeInRight">
+            <b-col lg="6" class="ml-auto p-3 animate__animated animate__fadeIn">
               <!-- <img
                 :src="`${obj.picCont}`"
                 class="col-img align-top"

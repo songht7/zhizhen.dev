@@ -24,7 +24,7 @@
                 <b-row class="" align-h="between">
                   <b-col
                     lg="5"
-                    class="p-3 animate__animated animate__fadeInLeft"
+                    class="p-3 animate__animated animate__fadeIn"
                   >
                     <img
                       :src="`${obj.pic}`"
@@ -34,7 +34,7 @@
                   </b-col>
                   <b-col
                     lg="5"
-                    class="ml-auto p-3 animate__animated animate__fadeInRight"
+                    class="ml-auto p-3 animate__animated animate__fadeIn"
                   >
                     <h1 class="title pLeft5">{{ obj.title }}</h1>
                     <!-- <img

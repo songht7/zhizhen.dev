@@ -108,11 +108,11 @@
 }
 
 .pro-block {
-  background   : #e6e6e6;
-  color        : #7d7d7d;
-  border-radius: .3rem;
-  display      : block;
-  overflow     : hidden;
+  background      : #e6e6e6;
+  color           : #7d7d7d;
+  // border-radius: .3rem;
+  display         : block;
+  overflow        : hidden;
 }
 
 .pro-block:hover {
@@ -127,7 +127,7 @@
   display    : block;
   padding    : .4rem 0;
   line-height: 1.8;
-  font-size  : 1.45rem;
+  font-size  : 1.7rem;
 }
 
 .brow {
@@ -286,6 +286,13 @@
   justify-content: flex-start;
 }
 
+.navbar.nav-bar-footer .footer-nav.container-xl {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : flex-end;
+}
+
+
 .logo-footer {
   display   : inline-block;
   width     : auto;
@@ -358,7 +365,7 @@
   }
 
   #LogoFooter {
-    max-height: 140px;
+    max-height: 80px;
   }
 
   .nav-coll {
@@ -431,4 +438,9 @@
     height: 3.5rem;
     top   : .5rem;
   }
+
+  .p-title {
+    padding: 1rem 0;
+  }
+
 }

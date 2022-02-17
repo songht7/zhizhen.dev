@@ -23,7 +23,7 @@
         <!--流程图表-->
         <b-container fluid="xl" class="text-light text-center">
           <b-row class="mb-3 block-row" align-h="around">
-            <b-col lg="auto" class="p-3 animate__animated animate__lightSpeedInLeft">
+            <b-col lg="auto" class="p-3 animate__animated animate__fadeIn">
               <img
                 :src="`${Cont.flowChart}`"
                 class="col-img align-top"
@@ -41,14 +41,14 @@
             :key="key"
             v-for="(obj, key) in Cont.list"
           >
-            <b-col lg="4" class="p-3 animate__animated animate__fadeInLeft">
+            <b-col lg="4" class="p-3 animate__animated animate__fadeIn">
               <img
                 :src="`${obj.pic}`"
                 class="col-img align-top"
                 alt="rbd group"
               />
             </b-col>
-            <b-col lg="6" class="p-3 animate__animated animate__fadeInRight">
+            <b-col lg="6" class="p-3 animate__animated animate__fadeIn">
               <img
                 :src="`${obj.picCont}`"
                 class="col-img align-top"

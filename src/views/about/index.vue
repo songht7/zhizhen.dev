@@ -16,7 +16,7 @@
           <div class="p-4">
             <b-container fluid="xl" class="text-light text-center">
               <b-row class="" align-h="between">
-                <b-col lg="5" class="p-3 animate__animated animate__fadeInLeft">
+                <b-col lg="5" class="p-3 animate__animated animate__fadeIn">
                   <img
                     :src="`${List.map}`"
                     class="col-img align-top"
@@ -25,7 +25,7 @@
                 </b-col>
                 <b-col
                   lg="5"
-                  class="ml-auto p-3 animate__animated animate__fadeInRight"
+                  class="ml-auto p-3 animate__animated animate__fadeIn"
                 >
                   <img
                     :src="`${List.mapDetail}`"
@@ -40,7 +40,7 @@
           <div class="block-bg p-4 pb-0">
             <b-container fluid="xl" class="text-light text-center">
               <b-row class="" align-h="center" align-v="center">
-                <b-col lg="5" class="p-3 animate__animated animate__fadeInLeft">
+                <b-col lg="5" class="p-3 animate__animated animate__fadeIn">
                   <img
                     :src="`${List.team}`"
                     class="align-center"
@@ -51,7 +51,7 @@
               <b-row class="" align-h="between">
                 <b-col
                   :lg="key == 2 ? auto : key == 1 ? '3' : '4'"
-                  class="p-3 animate__animated animate__fadeInLeft"
+                  class="p-3 animate__animated animate__fadeIn"
                   :key="key"
                   v-for="(obj, key) in List.teamOv"
                 >
@@ -63,7 +63,7 @@
                 </b-col>
               </b-row>
               <b-row class="" align-h="between">
-                <b-col class="p-0 animate__animated animate__fadeInLeft">
+                <b-col class="p-0 animate__animated animate__fadeIn">
                   <img
                     :src="`${List.teamPic}`"
                     class="col-img align-top"
@@ -80,7 +80,7 @@
               <b-row class="mb-3 block-row" align-h="around">
                 <b-col
                   lg="3"
-                  class="p-4 animate__animated animate__fadeInDown"
+                  class="p-4 animate__animated animate__fadeIn"
                   :key="key"
                   v-for="(obj, key) in List.partner"
                 >
@@ -95,7 +95,7 @@
               <b-row class="mb-3 block-row" align-h="around">
                 <b-col
                   lg="auto"
-                  class="p-3 animate__animated animate__fadeInDown"
+                  class="p-3 animate__animated animate__fadeIn"
                 >
                   <img
                     :src="`${List.milepost}`"
