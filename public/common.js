@@ -241,13 +241,13 @@ const ContContact = {
       title: "<h1 class='title'>位置信息</h1>",
       pic: cloudUrl + "/contact/map-sh.jpg",
       mapAddress: cloudUrl + "/contact/map-sh-address.png",
-      address: "<div class='subDes'><p>地址：上海市黄浦区桃源路85号永银大厦591室</p></div><div class='subDes'><p>电话：15026551292  赵勇</p></div><div class='subDes'><p>邮箱：zhy@jobpgroup.com</p></div>"
+      address: "<div class='subDes'><p>地址：上海市黄浦区桃源路85号永银大厦591室</p></div><div class='subDes'><p>电话：<a href='tel:15026551292' class='call'>15026551292</a>  赵勇</p></div><div class='subDes'><p>邮箱：<a href='mailto:zhy@jobpgroup.com' class='call'>zhy@jobpgroup.com</a></p></div>"
     },
     {
       title: "<h1 class='title'>位置信息</h1>",
       pic: cloudUrl + "/contact/map-wx.jpg",
       mapAddress: cloudUrl + "/contact/map-wx-address.png",
-      address: "</div><div class='subDes'><p>地址：无锡市新吴区行创四路89号星洲电子商务园1号楼401室</p></div><div class='subDes'><p>电话：0510-83488116</p></div><div class='subDes'><p>传真：0510-83488116</p></div><div class='subDes'><p>邮箱：BD@RBDGROUP.COM.CN</p></div>"
+      address: "</div><div class='subDes'><p>地址：无锡市新吴区行创四路89号星洲电子商务园1号楼401室</p></div><div class='subDes'><p>电话：<a href='tel:0510-83488116' class='call'>0510-83488116</a></p></div><div class='subDes'><p>传真：0510-83488116</p></div><div class='subDes'><p>邮箱：<a href='mailto:BD@RBDGROUP.COM.CN' class='call'>BD@RBDGROUP.COM.CN</a></p></div>"
     }
   ]
 };

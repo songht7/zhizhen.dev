@@ -22,6 +22,7 @@
         <b-container fluid="xl" class="text-left">
           <b-row
             class="mb-3"
+            align-v="end"
             :key="key"
             v-for="(obj, key) in Cont.list"
           >

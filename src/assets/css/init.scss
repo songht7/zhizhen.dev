@@ -51,6 +51,9 @@ h1.title {
 .subDes {
   font-size: 1.2rem;
 }
+.subDes:last-child{
+  padding-bottom: 0;
+}
 
 .threeDes {
   color: #a4a4a4;
