@@ -7,56 +7,103 @@
 // }
 @font-face {
   font-family: 'JDJY'; //圆体
-  src: url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJY.TTF') format('truetype');
+  src        : url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJY.TTF') format('truetype');
+  src        : url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJY.eot');
+  src        : url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJY.woff') format('woff'),
+    url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJY.TTF') format('truetype'),
+    url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJY.svg') format('svg');
 }
 
 @font-face {
   font-family: 'JDJYCU'; //圆体粗
-  src: url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYCU.TTF') format('truetype');
+  src        : url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYCU.TTF') format('truetype');
+  src        : url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYCU.eot');
+  src        : url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYCU.woff') format('woff'),
+    url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYCU.TTF') format('truetype'),
+    url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYCU.svg') format('svg');
 }
 
 @font-face {
   font-family: 'JDJYX'; //圆体细
-  src: url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYX.TTF') format('truetype');
+  src        : url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYX.TTF') format('truetype');
+  src        : url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYX.eot');
+  src        : url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYCU.woff') format('woff'),
+    url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYX.TTF') format('truetype'),
+    url('https://jobpassport-1259247972.cos.ap-shanghai.myqcloud.com/data/zhizhen/font/JDJYX.svg') format('svg');
 }
 
 body,
 html {
-  width: 100%;
-  height: 100%;
-  font-family: 'JDJYX', 'Source Han Sans', "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  width                    : 100%;
+  height                   : 100%;
+  // font-family           : 'JDJYX', 'Source Han Sans', "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family              : 'JDJY';
   // font-weight: 400;
-  font-variant: tabular-nums;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  background-color: #000;
+  font-variant             : tabular-nums;
+  overflow-x               : hidden;
+  -webkit-font-smoothing   : antialiased;
+  background-color         : #000;
 }
 
 h1.title {
-  font-size: 2.8rem;
-  font-family: 'JDJYCU';
-  letter-spacing: 0.5rem;
+  font-size     : 2.8rem;
+  font-family   : 'JDJYCU';
+  letter-spacing: 0.1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size  : 1.3rem;
+  font-family: 'JDJY';
+}
+.footer-nav .nav-btn-footer .nav-link{
+  font-family: 'JDJY';
 }
 
 .des,
 .subDes,
-.threeDes {
-  font-size: 2.2rem;
-  line-height: 1.4;
-  color: #7e7e7e;
-  font-family: 'JDJY';
+.threeDes,
+.smallDes {
+  font-size     : 2.2rem;
+  line-height   : 1.4;
+  color         : #7e7e7e;
+  font-family   : 'JDJY';
   padding-bottom: 1rem;
 }
 
 .subDes {
   font-size: 1.65rem;
 }
-.subDes:last-child{
+
+.subDes:last-child {
   padding-bottom: 0;
+}
+
+.smallDes {
+  font-size: 1.45rem;
 }
 
 .threeDes {
   color: #a4a4a4;
+}
+
+p.p-li {
+  padding-bottom: .3rem;
+  text-align    : justify;
+  padding-left  : 1rem;
+  position      : relative;
+  line-height   : 1.6;
+}
+
+p.p-li::before {
+  position : absolute;
+  content  : "●";
+  font-size: .95rem;
+  left     : -0.1rem;
+  top      : 0.1rem;
+}
+
+p.p-li-no::before {
+  content: "";
 }
 
 .text-right {
@@ -72,27 +119,27 @@ h1.title {
 }
 
 #app {
-  width: 100%;
-  height: 100%;
+  width   : 100%;
+  height  : 100%;
   overflow: auto;
 }
 
 .loading {
 
   position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
+  left    : 0;
+  top     : 0;
+  width   : 100%;
+  height  : 100%;
+  z-index : 9999;
 
   .anticon-loading,
   .ant-spin-dot {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: auto;
-    height: auto;
+    position : absolute;
+    left     : 50%;
+    top      : 50%;
+    width    : auto;
+    height   : auto;
     transform: translate(-50%, -50%);
     font-size: 48px !important;
   }

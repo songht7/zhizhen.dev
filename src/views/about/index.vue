@@ -38,8 +38,8 @@
           </div>
           <!--领导团队-->
           <div class="block-bg p-4 pb-0">
-            <b-container fluid="xl" class="text-light text-center">
-              <b-row class="" align-h="center" align-v="center">
+            <b-container fluid="xl" class="">
+              <b-row class="text-center" align-h="center" align-v="center">
                 <b-col lg="5" class="p-3 animate__animated animate__fadeIn">
                   <img
                     :src="`${List.team}`"
@@ -48,18 +48,20 @@
                   />
                 </b-col>
               </b-row>
-              <b-row class="" align-h="between">
+              <b-row class="text-left" align-h="between">
+                <!-- :lg="key == 2 ? auto : key == 1 ? '3' : '4'" -->
                 <b-col
-                  :lg="key == 2 ? auto : key == 1 ? '3' : '4'"
-                  class="p-3 animate__animated animate__fadeIn"
+                  lg="4"
+                  class="p-3 mb-3 animate__animated animate__fadeIn"
                   :key="key"
-                  v-for="(obj, key) in List.teamOv"
+                  v-for="(obj, key) in List.teamOvTxt"
                 >
-                  <img
+                  <div v-html="obj"></div>
+                  <!-- <img
                     :src="`${obj}`"
                     class="col-img align-top"
                     alt="rbd group"
-                  />
+                  /> -->
                 </b-col>
               </b-row>
               <b-row class="" align-h="between">
@@ -80,6 +82,7 @@
               <b-row class="mb-3 block-row" align-h="around">
                 <b-col
                   lg="3"
+                  cols="auto"
                   class="p-4 animate__animated animate__fadeIn"
                   :key="key"
                   v-for="(obj, key) in List.partner"
@@ -93,10 +96,7 @@
               </b-row>
               <!--里程碑-->
               <b-row class="mb-3 block-row" align-h="around">
-                <b-col
-                  lg="auto"
-                  class="p-3 animate__animated animate__fadeIn"
-                >
+                <b-col lg="auto" class="p-3 animate__animated animate__fadeIn">
                   <img
                     :src="`${List.milepost}`"
                     class="col-img align-top"
@@ -212,11 +212,11 @@ export default {
 </script>
 
 <style lang="scss">
-  .bettomBg {
-    background-color: #fff;
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-bottom: 24rem;
-  }
+.bettomBg {
+  background-color: #fff;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 24rem;
+}
 </style>

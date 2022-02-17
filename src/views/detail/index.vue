@@ -22,10 +22,7 @@
             <div class="block-row block-row-bold">
               <b-container fluid="xl" class="">
                 <b-row class="" align-h="between">
-                  <b-col
-                    lg="5"
-                    class="p-3 animate__animated animate__fadeIn"
-                  >
+                  <b-col lg="5" class="p-3 animate__animated animate__fadeIn">
                     <img
                       :src="`${obj.pic}`"
                       class="col-img align-top"
@@ -147,7 +144,7 @@ export default {
     var page = this.$route.query.p;
     console.log(page);
     if (this.page != page) {
-      this.$nextTick(function() {
+      this.$nextTick(function () {
         that.Loading = false;
         that.page = page;
         that.List = that.Detail[page] || [];
@@ -178,7 +175,9 @@ export default {
     blockDetail(key) {
       var that = this;
       // console.log(key);
-      that.List[key]["dShow"] = !that.List[key]["dShow"];
+      if (!md.mobile()) {
+        that.List[key]["dShow"] = !that.List[key]["dShow"];
+      }
     },
   },
 };

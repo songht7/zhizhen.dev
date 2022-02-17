@@ -53,8 +53,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  font-size: 20px;
-  color    : #595757;
+  color: #595757;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -301,7 +300,7 @@
 
 .footer-nav .nav-btn .nav-link,
 .footer-nav .nav-btn-footer .nav-link {
-  font-size: 1rem;
+  font-size: .9rem;
   color    : #fff;
 }
 
@@ -351,6 +350,13 @@
   //   padding: 0;
   //   line-height: 2.2;
   // }
+  .navbar-light .navbar-nav .nav-link{
+    font-size: 2.5rem;
+  }
+  .footer-nav .nav-btn-footer .nav-link{
+    font-size: 2rem;
+  }
+
   #Page-main #Page-container {
     padding-top: 10.5rem;
   }
@@ -361,7 +367,7 @@
   }
 
   #Logo {
-    max-height: 60px;
+    max-height: 90px;
   }
 
   #LogoFooter {
@@ -373,7 +379,7 @@
   }
 
   .nav-bar {
-    padding: 1.5rem 3rem;
+    padding: 2rem 3rem;
   }
 
   .navbar-toggler-icon {
@@ -387,10 +393,6 @@
 
   .navbar-nav .nav-link {
     font-size: 50px;
-  }
-
-  .navbar-light .navbar-nav .nav-link {
-    font-size: 2rem;
   }
 
   .copyright a,

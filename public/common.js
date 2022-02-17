@@ -124,6 +124,11 @@ const ContAbout = {
       cloudUrl + "/about/title1-l2.png",
       cloudUrl + "/about/title1-l3.png",
     ],
+    teamOvTxt: [
+      "<div class='subDes smallDes'><p class='p-li'>2015年通过ISO9001质量体系认证</p><p class='p-li'>2017年进入多世界500强全球供应链名单</p><p class='p-li'>服务范围覆盖中国，服务质量受到大量企业认可</p><p class='p-li'>平均每年为每家企业节约质量本过100万元</p></div>",
+      "<div class='subDes smallDes'><p class='p-li'>年检验数量：100,000,000+件</p><p class='p-li'>年检测不良品数量：1,200,000+件</p><p class='p-li'>年检测产品种类：10,000+件</p><p class='p-li'>涉及行业：10+</p></div>",
+      "<div class='subDes smallDes'><p class='p-li p-li-no'>质贞科技是一家专业的第三方质量解决方案提供者，源于瑞彼得为中国1,000+制造企业服务，10年的质量数据积累。致力于向客户提供专业的质量检查解决方案及质量大数据挖掘服务，提高产品生产效率并降低产品在</p></div>"
+    ],
     teamPic: cloudUrl + "/about/jtz.jpg",
     partner: [
       cloudUrl + "/about/p1.jpg",
@@ -208,6 +213,8 @@ const ContBrand = {
       title: "我们的使命",
       titlePic: cloudUrl + "/brand/2-title.png",
       pic: [cloudUrl + "/brand/2-1.png"],
+      cols: '12',
+      lg: "auto",
       line: false,
       full: false
     },
@@ -222,6 +229,8 @@ const ContBrand = {
       title: "我们的承诺与保证",
       titlePic: cloudUrl + "/brand/3-title.png",
       pic: [cloudUrl + "/brand/3-1.png", cloudUrl + "/brand/3-2.png", cloudUrl + "/brand/3-3.png"],
+      cols: "4",
+      lg: "",
       line: false,
       full: false
     },

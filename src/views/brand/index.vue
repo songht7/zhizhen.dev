@@ -41,9 +41,15 @@
                 </b-col>
               </b-row>
               <b-row align-h="around">
-                <!-- cols="12"
-                  lg="auto" -->
+
+                  <!-- 
+                  cols="12"
+                  lg="auto"
+                  :cols="obj.cols?obj.cols:''"
+                   -->
                 <b-col
+                  :cols="obj.cols?obj.cols:''"
+                  :lg="obj.lg?obj.lg:''"
                   class="mb-3 p-3 animate__animated animate__fadeIn"
                   :key="key2"
                   v-for="(obj2, key2) in obj.pic"
@@ -62,7 +68,11 @@
                 <b-row class="" align-h="around" v-if="obj.titlePic">
                   <b-col
                     lg="auto"
-                    class="pb-5 mb-5 animate__animated animate__fadeIn"
+                    class="
+                      pb-5
+                      mb-5
+                      animate__animated animate__fadeIn
+                    "
                   >
                     <img
                       :src="`${obj.titlePic}`"
@@ -79,7 +89,11 @@
               >
                 <img
                   :src="`${obj2}`"
-                  class="col-img align-top animate__animated animate__fadeIn"
+                  class="
+                    col-img
+                    align-top
+                    animate__animated animate__fadeIn
+                  "
                   alt="rbd group"
                 />
               </div>
